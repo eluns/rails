@@ -35,7 +35,7 @@ class ProductTest < ActiveSupport::TestCase
   test "that the price must be at least one cent" do
     product = products(:one)
 
-    product.price = 0.01
+    product.price = 0.001
     assert !product.valid?
     assert product.errors.on(:price)
 
@@ -52,6 +52,7 @@ class ProductTest < ActiveSupport::TestCase
     assert ! product.valid?
     assert product.errors.on(:title)
   end
+  
 
   test "urls must be formatted properly" do
     product = products(:one)
