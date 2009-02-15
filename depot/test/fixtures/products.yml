@@ -1,13 +1,16 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
-  title: Test Book
-  description: Homework week2
-  image_url: http://www.uwruby.com/book.gif
-  price: 100
+#one:#  title: Test Book#  description: Homework week2#  image_url: http://www.uwruby.com/book.gif#  price: 100#two:#  title: Test Book 2#  description: Homework week4#  image_url: http://www.uwruby.com/testbook.gif#  price: 500
 
+ 
+one:
+  title: MyString
+  description: MyText
+  image_url: foo.gif
+  price: 100
+ 
 two:
-  title: Test Book 2
-  description: Homework week4
-  image_url: http://www.uwruby.com/testbook.gif
+  title: two
+  description: MyText
+  image_url: foo.jpg
   price: 500
