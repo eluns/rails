@@ -1,8 +1,16 @@
 require 'test_helper'
-
+ 
 class AdminControllerTest < ActionController::TestCase
-  # Replace this with your real tests.
-  test "the truth" do
-    assert true
+  test "needs authentication" do
+    get :index
+    assert_redirected_to :controller => "admin", :action => "login"
+  end
+ 
+  test "logged in" do
+    @request.session[:user_id] = users(:one).id #put in setup
+    get :index
+    assert_response :success
   end
 end
+
+ 
