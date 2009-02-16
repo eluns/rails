@@ -1,14 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  product: one
-  order: one
+  product_id: one
+  order_id: one
   quantity: 1
   total_price: 9.99
 
 two:
-  product: two
-  order: two
+  product_id: two
+  order_id: two
   quantity: 1
   total_price: 9.99
-

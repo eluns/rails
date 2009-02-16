@@ -17,11 +17,5 @@ class StoreControllerTest < ActionController::TestCase
 	assert session[:cart]
   end
   
-   test "add_to_carts adds a product to the cart" do
-    post :add_to_cart, :id => products(:one).id
-    assert_response :success
-    assert cart = assigns(:cart)
-    assert_equal 1, cart.items.length
-  end
   
 end

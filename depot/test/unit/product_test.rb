@@ -3,7 +3,7 @@ require 'test_helper'
 class ProductTest < ActiveSupport::TestCase
   test "product has price" do
     product = products(:one)
-    product.price = 100
+    product.price = 1000
     product.save!
   end
 
