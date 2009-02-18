@@ -1,0 +1,14 @@
+'es': 
+  layout: 
+	title: "Publicaciones de Pragmatic" 
+	side: 
+	  home: "Inicio" 
+	  questions: "Preguntas" 
+ 	  news: "Noticias" 
+	  contact: "Contacto" 
+  main:
+    title: "Su Cat&aacute;logo de Pragmatic"
+    button:
+     add: "A&ntilde;adir al Carrito"
+
+

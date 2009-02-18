@@ -1,5 +1,13 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
-en:
-  hello: "Hello world"
+'en':
+  layout: 
+	title: "Pragmatic Bookshelf" 
+	side: 
+	  home: "Home" 
+	  questions: "Questions" 
+	  news: "News" 
+	  contact: "Contact" 
+  main:
+    title: "Your Progmatic Catalog"
+    button:
+     add: "Add to Cart"
+	  
