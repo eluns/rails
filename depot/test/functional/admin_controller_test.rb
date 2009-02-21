@@ -11,6 +11,20 @@ class AdminControllerTest < ActionController::TestCase
     get :index
     assert_response :success
   end
+  
+  test "login" do 
+    dave = users(:one) 
+    post :login, :name => one.name, :password => 'cat' 
+    assert_redirected_to :action => "index" 
+    assert_equal one.id, session[:user_id] 
+  end 
+
+  test "bad password" do 
+     dave = users(:one) 
+     post :login, :name => one.name, :password => 'wrong' 
+     assert_template "login" 
+   end 
+
 end
 
  
