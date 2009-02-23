@@ -17,5 +17,17 @@ class StoreControllerTest < ActionController::TestCase
 	assert session[:cart]
   end
   
+  test "es option work" do
+    get :index, :locale => "es"
+    assert_response :success
+    assert_equal "es", @response.session[:locale]
+  end
+ 
+  test "only es and en should work" do
+    get :index, :locale => "jp"
+    assert_response :success
+    assert_equal "en", @response.session[:locale]
+    assert_equal "jp translation not available", @response.flash[:notice]
+  end
   
 end

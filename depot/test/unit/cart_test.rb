@@ -34,21 +34,5 @@ class CartTest < ActiveSupport::TestCase
     assert_equal 200.00, cart.total_price
   end
 
-  def test_total_items
-    cart = Cart.new
-    assert_equal 0, cart.total_items
-    cart.add_product(products(:one))
-    assert_equal 1, cart.total_items
-  end
-
-  def test_add_duplicate_product 
-    cart = Cart.new 
-    rails_book = products(:one) 
-    cart.add_product rails_book 
-    cart.add_product rails_book 
-    assert_equal 2*rails_book.price, cart.total_price 
-    assert_equal 1, cart.items.size 
-    assert_equal 2, cart.items[0].quantity 
-end 
 
 end
