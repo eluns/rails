@@ -11,6 +11,8 @@ RAILS_GEM_VERSION = '2.2.2' unless defined? RAILS_GEM_VERSION
 require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
+ config.gem 'mislav-will_paginate', :version => '~> 2.3.2', :lib => 'will_paginate', :source => 'http://gems.github.com' 
+
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
   # -- all .rb files in that directory are automatically loaded.
@@ -27,6 +29,7 @@ Rails::Initializer.run do |config|
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
+  #config.gem "andre-geokit", :lib=>'geokit', :source => 'http://gems.github.com'
 
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
@@ -56,7 +59,7 @@ Rails::Initializer.run do |config|
   # no regular words or you'll be exposed to dictionary attacks.
   config.action_controller.session = {
     :session_key => '_rubyholic_session',
-    :secret      => '569c280e68b8b9d2eb32025fd734979b21cc79c39cbac657807d9b5fb73fc1684c2f7a917c97acfe6c12a705838f589af88a9223f3038aca5e939e70d49c4c2d'
+    :secret      => '00b3a78d0f00e82ec7decf14135761119e904f64a3880416441e82f4f9b3693b219b5a9d0765749f948ca4378a80f2041b2c744a9f1bc7143c6b67077b68299d'
   }
 
   # Use the database for sessions instead of the cookie-based default,
@@ -72,4 +75,6 @@ Rails::Initializer.run do |config|
   # Activate observers that should always be running
   # Please note that observers generated using script/generate observer need to have an _observer suffix
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
+ # require 'rubygems'
+  #require 'will_paginate'
 end

@@ -1,4 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :events
+
+  map.resources :groups
+#    :collecction => { recent => get }
+#    :member => { activate => post }
+  
+
+  map.resources :locations
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
