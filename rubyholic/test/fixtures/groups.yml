@@ -1,24 +1,22 @@
-
-
 one:
   name: Seattle.RB
 two:
-  name: Firedster Trivia
+  name: SanDiego.RB
 three:
-  name: Flight of the Conchords
+  name: Chicago.RB
 four:
-  name: WiFi Freeloaders
+  name: Portland.RB
 five:
-  name: Sales Schemers
+  name: GigHarbor.RB
 six:
-  name: Dirty Rotten Scoundrels
+  name: Tacoma.RB
 seven:
-  name: Blackout Seekers
+  name: Houston.RB
 eight:
-  name: Bad News Bears
+  name: LosAngles.RB
 nine:
-  name: Code Monkeys
+  name: SealBeach.RB
 ten:
-  name: Glanton Gang
+  name: OceanBeach.RB
 eleven:
-  name: Adios Amigos
+  name: Dolton.RB
