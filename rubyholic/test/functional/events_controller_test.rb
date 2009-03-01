@@ -12,13 +12,7 @@ class EventsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create event" do
-    assert_difference('Event.count') do
-      post :create, :event => { }
-    end
 
-    assert_redirected_to event_path(assigns(:event))
-  end
 
   test "should show event" do
     get :show, :id => events(:one).id
@@ -42,4 +36,6 @@ class EventsControllerTest < ActionController::TestCase
 
     assert_redirected_to events_path
   end
+  
+  
 end

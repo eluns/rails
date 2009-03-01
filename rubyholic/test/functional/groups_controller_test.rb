@@ -54,4 +54,11 @@ class GroupsControllerTest < ActionController::TestCase
  
     assert_redirected_to groups_path
   end
+  
+ test "should get index sorted by name" do
+    get :index, :sort => "name"
+    assert_response :success
+    assert_not_nil assigns(:groups)
+ end
+
 end

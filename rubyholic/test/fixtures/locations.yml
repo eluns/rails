@@ -1,11 +1,11 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyString
-  latitude: 1.5
-  longitude: 1.5
+  name: Seattle
+  latitude: 90.1232
+  longitude: 130.12397
 
 two:
-  name: MyString
-  latitude: 1.5
-  longitude: 1.5
+  name: SanDiego
+  latitude: 45.23408
+  longitude: 140.4230
