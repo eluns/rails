@@ -1,0 +1,500 @@
+   15  ls
+   16  pwd
+   17  cd
+   18  cd /Users/lunsford_elizabeth/Ruby_Class/Q2/uwruby-depot-0a426d85e71658e97ea8fd0e940746f4e2433ef0-1/test/fixtures
+   19  ls
+   20  cp * /Users/lunsford_elizabeth/rails/depot/test/fixtures
+   21  ls
+   22  ls
+   23  cd
+   24  cd /Users/lunsford_elizabeth/rails/depot/test/fixtures
+   25  ls
+   26  nano products.yml 
+   27  ls
+   28  rm products2.yml 
+   29  cd ..
+   30  cd ..
+   31  ls
+   32  rake test
+   33  pwd
+   34  cd test/fixtures/
+   35  ls
+   36  rm users.yml 
+   37  cd ..
+   38  cd ..
+   39  rake test
+   40  cd test/fixtures/
+   41  ls
+   42  rm orders.yml 
+   43  rm line_items.yml 
+   44  cd ..
+   45  cd ..
+   46  ls
+   47  rake test
+   48  rake test
+   49  clear
+   50  clear
+   51  rake test
+   52  rake test
+   53  rake test
+   54  pwd
+   55  rake test
+   56  ls
+   57  ruby script/generate scaffold order name:string address:text email:string pay_type:string 
+   58  ruby script/generate scaffold line_item product_id:integer order_id:integer quantity:integer total_price:decimal 
+   59  rake db:migrate
+   60  pwd
+   61  cd app/
+   62  cd model
+   63  cd models/
+   64  ls
+   65  mv checkout.html.erb ..
+   66  cd ..
+   67  ls
+   68  mv checkout.html.erb views
+   69  cd views/
+   70  ls
+   71  pwd
+   72  mv checkout.html.erb store/
+   73  cd ..
+   74  ls
+   75  cd ..
+   76  ls
+   77  rake test
+   78  rake test
+   79  rake test
+   80  rake test
+   81  rake test
+   82  rake test
+   83  pwd
+   84  ruby script/generate scaffold user name:string hashed_password:string salt:string 
+   85  rake db:migrate
+   86  ls
+   87  pwd
+   88  ruby script/generate controller admin login logout index 
+   89  rake db:migrate
+   90  db:sessions:clear
+   91  db:sessions:clear
+   92  db:sessions:clear
+   93  pwd
+   94  cd app/views/
+   95  ls
+   96  cd layouts/
+   97  ls
+   98  rm products.html.erb 
+   99  rm users.html.erb 
+  100  rm orders.html.erb 
+  101  pwd
+  102  cd ..
+  103  cd ..
+  104  pwd
+  105  cd ..
+  106  ruby script/console 
+  107  pwd
+  108  db:sessions:clear
+  109  pwd
+  110  rake:test
+  111  ls
+  112  rake test
+  113  rake test
+  114  rake test
+  115  rake test
+  116  rake test:units
+  117  rake test:units
+  118  rake test
+  119  rake test
+  120  rake test
+  121  rake test
+  122  rake test
+  123  clear
+  124  clear
+  125  rake test
+  126  rake test
+  127  rake test
+  128  rake test
+  129  rake test
+  130  rake test unit
+  131  rake test
+  132  clear
+  133  rake test
+  134  rake test
+  135  rake test
+  136  rake test
+  137  rake test
+  138  rake test unit
+  139  rake test unit
+  140  rake test 
+  141  rake test 
+  142  rake test 
+  143  clear
+  144  rake test 
+  145  rake test 
+  146  rake test 
+  147  rake test 
+  148  rake test 
+  149  git add .
+  150  pwd
+  151  git commit -m 'fixed depot'
+  152  git push
+  153  rake test 
+  154  git add .
+  155  git commit -m 'additioanl test''
+  156  '
+  157  git add .
+  158  git commit -m 'Week 4 homework'
+  159  git push
+  160  cd rails/depot/
+  161  script/server
+  162  script/server
+  163  script/server
+  164  script/server
+  165  cd rails/depot/
+  166  ruby script/generate controller info who_bought 
+  167   curl http://localhost:3000/info/who_bought/3 
+  168   curl http://localhost:3000/info/who_bought/3 
+  169   curl http://localhost:3000/info/who_bought/3 
+  170  curl -H "Accept: application/xml" curl -H "Accept: application/xml"
+  171  curl -H "Accept: application/xml" http://localhost:3000/info/who_bought/3 
+  172  curl -H "Accept: text/html" http://localhost:3000/info/who_bought/3 
+  173  curl -H "Accept: text/html" http://localhost:3000/info/who_bought/3 
+  174  curl -H "Accept: text/html" http://localhost:3000/info/who_bought/3 
+  175  curl --silent http://localhost:3000/info/who_bought/3.xml 
+  176  curl --silent http://localhost:3000/info/who_bought/3.atom 
+  177  curl -H "Accept: application/json" http://localhost:3000/info/who_bought/3
+  178  rake doc:app
+  179  rake stats
+  180  ls
+  181  cd config/
+  182  ls
+  183  cd initializers/
+  184  ls
+  185  rm i18ln.rb 
+  186  ls
+  187  mv i18n.rb I18n.rb
+  188  ls
+  189  ls
+  190  mv I18n.rb i18n.rb
+  191  cd rails/depot/
+  192  script/server
+  193  cd rails/depot/
+  194  git add .
+  195  git commit -m 'broken i18n'
+  196  git push
+  197  cd rails/depot
+  198  ls
+  199  script/server
+  200  exit
+  201  cd rails/depot/
+  202  script/server
+  203  cd rails/depot
+  204  cd rails/depot/
+  205  ls
+  206  script/server
+  207  cd rails/depot/
+  208  cd rails
+  209  ls
+  210  rails rubyholic
+  211  cd rubyholic/
+  212  git add .
+  213  git commit -m 'first try for rubyholic'
+  214  git push
+  215  ls
+  216  cd ..
+  217  ls
+  218  rm -R rubyholic/
+  219  mkdir rubyholic
+  220  cd rubyholic/
+  221  git init
+  222  touch README
+  223  git add README
+  224  git commit -m 'first commit for rubyholic'
+  225   git remote add origin git@github.com:eluns/rubyholic.git
+  226  git push origin master
+  227  ls
+  228  ls
+  229  rails rubyholic
+  230  ls
+  231  cd rubyholic/
+  232  ls
+  233  rake db:create RAILS_ENV='development' 
+  234  mysqladmin -u root create rubyholic_development
+  235  pwd
+  236  ls
+  237  cd ..
+  238  ls
+  239  cd ..
+  240  ls
+  241  git status
+  242  ls
+  243  rm -f rubyholic/
+  244  rm -R rubyholic/
+  245  rm -R rubyholic/
+  246  ls
+  247  ls
+  248  cd depot/
+  249  ls
+  250  cd ..
+  251  ls
+  252  cd ..
+  253  ls
+  254  cd rails
+  255  rails rubyholic
+  256  git status
+  257  git add .
+  258  git commit -m 'second try'
+  259  git push
+  260  ls
+  261  cd rubyholic/
+  262  ls
+  263  ls
+  264  rake db:create RAILS_ENV='development' 
+  265  rake db:migrate
+  266  pwd
+  267  ruby script/generate scaffold groups:string 
+  268  ruby script/generate scaffold groups name:string 
+  269  ruby script/generate scaffold location name:string latitude:float longitude:float
+  270  rake db:migrate
+  271  ls
+  272  cd ..
+  273  script/server
+  274  ls
+  275  cd rubyholic/
+  276  script/server
+  277  cd  ..
+  278  ls
+  279  rm -R rubyholic/
+  280  ls
+  281  rails rubyholic
+  282  ls
+  283  rake db:create RAILS_ENV='development' 
+  284  cd rubyholic/
+  285  cd rubyholic/
+  286  ls
+  287  cd ..
+  288  ls
+  289  cd rubyholic/
+  290  rake db:create RAILS_ENV='development' 
+  291  rake db:migrate
+  292  ruby script/generate scaffold location name:string latitude:float longitude:float
+  293  ruby script/generate scaffold group name:string 
+  294  rake db:migrate
+  295  script/server
+  296  ls
+  297  cd rails/
+  298  ls
+  299  cd rubyholic/
+  300  ls
+  301  cd rails/depot/
+  302  ls
+  303  script/server
+  304  cd rails/depot/
+  305  ls
+  306  script/server
+  307  exit
+  308  cd rails/depot/
+  309  rake unit::test
+  310  rake test:units
+  311  rake test:units
+  312  rake test:units
+  313  clear
+  314  rake test:units
+  315  rake test:units
+  316  rake test:units
+  317  rake test:units
+  318  cd rails/depot/
+  319  ls
+  320  git add .
+  321  git commit -m "week 5 homework"
+  322  git push
+  323  cd app/
+  324  ls
+  325  cd controllers/
+  326  ls
+  327  more info_controller.rb 
+  328  cd rails/depot/
+  329  ls
+  330  git add .
+  331  git commit -m "homework week 5"
+  332  git push
+  333  pwd
+  334  cd rails/depot/
+  335  git push
+  336  cd
+  337  cd Downloads/
+  338  ls
+  339  ls -l
+  340  ls
+  341  cd
+  342  cd rails/depot/test/
+  343  mkdir integration
+  344  cd ..
+  345  rake test:units
+  346  rake test
+  347  rake test
+  348  rake test
+  349  rake test
+  350  ls
+  351  cd test
+  352  ls
+  353  rm -R integration/
+  354  cd fixtures/
+  355  ls
+  356  rake test
+  357  ls
+  358  rake test
+  359  rake test
+  360  rake test
+  361  rake test
+  362  rake test
+  363  rake test
+  364  rake test
+  365  rake test
+  366  rake test
+  367  rake test
+  368  rake test
+  369  ls
+  370  cd ..
+  371  ls
+  372  mkdir integration
+  373  rake test
+  374  rake test
+  375  ls
+  376  rm -R integration/
+  377  rake test
+  378  rake test
+  379  rake test
+  380  rake test
+  381  rake test
+  382  rake test
+  383  cd .
+  384  cd ..
+  385  ls
+  386  git add .
+  387  git commit -m 'week 5 homework'
+  388  git push
+  389  cd rails/rubyholic/
+  390  ls
+  391  script/server
+  392  script/server
+  393  script/server
+  394  script/server
+  395  script/server
+  396  script/server
+  397  cd rails/rubyholic/
+  398  ls
+  399  cd app/views/
+  400  ls
+  401  cd groups/
+  402  ls
+  403  mv group_list.html.erb ..
+  404  cd ..
+  405  ls
+  406  mkdir pager
+  407  mv group_list.html.erb pager/
+  408  cd ..
+  409  cd ..
+  410  ls
+  411  cd ..
+  412  cd depot/
+  413  ls
+  414  cd app/views/
+  415  ls
+  416  cd store/
+  417  ls
+  418  cd checkout.html.erb 
+  419  more checkout.html.erb 
+  420  ls
+  421  ls
+  422  cd ..
+  423  ls
+  424  cd ..
+  425  ls
+  426  pwd
+  427  cd ..
+  428  cd ..
+  429  pwd
+  430  cd ..
+  431  ls
+  432  cd rails/rubyholic/
+  433  ls
+  434  cd app/views/groups/
+  435  ls
+  436  ls
+  437  pwd
+  438  cd ..
+  439  ls
+  440  rm pager/
+  441  rm -R pager/
+  442  ls
+  443  cd ..
+  444  cd controllers/
+  445  ls
+  446  rm pager_controller.rb 
+  447  ls
+  448  cd ..
+  449  ls
+  450  pwd
+  451  cd views/
+  452  ls
+  453  cd groups/
+  454  ls
+  455  rm group_list.html.erb 
+  456  cd rails/veiws
+  457  cd rails/rubyholic/app/views/
+  458  ls
+  459  cd ..
+  460  pwd
+  461  cd controllers/
+  462  ls
+  463  more locations_controller.rb 
+  464  more locations_controller.rb 
+  465  more locations_controller.rb 
+  466   cd ..
+  467  ls
+  468  cd models/
+  469  ls
+  470  more group.rb 
+  471  ls
+  472  cd ..
+  473  ls
+  474  cd controllers/
+  475  ls
+  476  more groups_controller.rb 
+  477  cd ..
+  478  cd models/
+  479  ls
+  480  more more group.rb 
+  481  more more group.rb 
+  482  ls
+  483  nano location.rb 
+  484  ls
+  485  cd ..
+  486  ls
+  487  cd views/
+  488  la
+  489  ls
+  490  cd groups/
+  491  ls
+  492  nano index.html.erb 
+  493  exit
+  494  sudo gem sources --add gttp://gems.github.com http://gems.github.com added to source
+  495  sudo gem sources --add http://gems.github.com http://gems.github.com added to source
+  496  cd rails/rubyholic/
+  497  ls
+  498  ruby script/server
+  499  ruby script/server
+  500  ruby script/server
+  501  cd rails/rubyholic/
+  502  ls
+  503  cd app/controllers/
+  504  ls
+  505  ls
+  506  cd ..
+  507  ls
+  508  cd models/
+  509  ls
+  510  ls
+  511  rm groups_location.rb 
+  512  cd ..
+  513  ls
+  514  history > history.txt
