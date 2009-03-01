@@ -12,13 +12,6 @@ class LocationsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create location" do
-    assert_difference('Location.count') do
-      post :create, :location => { }
-    end
-
-    assert_redirected_to location_path(assigns(:location))
-  end
 
   test "should show location" do
     get :show, :id => locations(:one).id
@@ -30,10 +23,6 @@ class LocationsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should update location" do
-    put :update, :id => locations(:one).id, :location => { }
-    assert_redirected_to location_path(assigns(:location))
-  end
 
   test "should destroy location" do
     assert_difference('Location.count', -1) do

@@ -5,7 +5,7 @@ class GroupsController < ApplicationController
   
   def index
     if params[:order_by]
-      @groups = Group.paginate :page => params[:page], :per_page => 10, :order => params[:order_by]
+      @groups = Group.paginate :page => params[:page], :per_page => 10, :order => 'upper(name) ASC'
     else
        @groups = Group.paginate :page => params[:page], :per_page => 10
     end

@@ -4,7 +4,7 @@ class LocationsController < ApplicationController
 
   def index
     if params[:order_by]
-      @locations = Location.paginate :page => params[:page], :per_page => 10, :order => params[:order_by]
+      @locations = Location.paginate :page => params[:page], :per_page => 10, :order => 'upper(name) ASC'
     else
       @locations = Location.paginate :page => params[:page], :per_page => 10
     end
